@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   /* background-image: url("dreamers-dreamville-revenge-of-the-dreamers-press-photo-2019-billboard-1548-compressed.jpg"); */
+   background-image:  linear-gradient(rgba(0, 0, 0,0.6), rgba(0, 0, 0,0.6)), url("dreamers-dreamville-revenge-of-the-dreamers-press-photo-2019-billboard-1548-compressed.jpg");
+   background-attachment: fixed;
+   background-size:cover;   
+   height: auto;
+   
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+h1{
+    font-size:38px ;
+}
+
+figcaption{
+    font-size:15px ;
+    /* background-color: rgba(141, 189,240, 0.6); */
+}
+
+h1, h2, figcaption, h3, a {
+    font-family: 'IM Fell English SC', serif;
+    color: blanchedalmond;
+}
+
+h3{
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+
+#img-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    flex-wrap: wrap;
+    opacity: 0.75;
+}
+
+#img-div:hover{
+    opacity: 1;
+}
+
+
+#image {
+    max-width: 80%;
+    border-radius: 15px;
+}
+
+ul {
+    font-family: 'Oswald', sans-serif;
+    color: whitesmoke;
+    text-align: justify;
+    padding-top: 10px 10px;
+    margin: 10px 20px;
+    width: 750px;
+    opacity: 0.8;
+}
+
+
+li{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 500px){
+    body{
+        background-image:  linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.8), rgba(0, 0, 0,0.3)), url("dreamers-dreamville-revenge-of-the-dreamers-press-photo-2019-billboard-1548-compressed.jpg");
+        background-size: cover;
+        resize: both;
+        /* background-repeat: repeat; */
+
+    }
+    h1{
+        font-size:24px ;
+    }
+    h2{
+        font-size: 16px;
+    }
+    
+    figcaption{
+        font-size:8px ;
+        /* background-color: rgba(141, 189,240, 0.6); */
+    }
+
+    h3{
+        font-size: 12px;
+    }
+
+    #img-div{
+        width: 350px;
+    }
+    
+    ul {
+        font-family: 'Oswald', sans-serif;
+        color: whitesmoke;
+        text-align: justify;
+        width: auto;
+    }
+    li{
+        width: fit-content;
+    }
+
+}
+footer{
+    margin-bottom: 10px;
+}
